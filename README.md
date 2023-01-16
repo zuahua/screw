@@ -1,3 +1,26 @@
+# fork change
+
+1. postgresql NPE
+
+```shell
+cn.smallbun.screw.core.exception.ScrewException: java.lang.NullPointerException
+
+	at cn.smallbun.screw.core.util.ExceptionUtils.mpe(ExceptionUtils.java:62)
+	at cn.smallbun.screw.core.execute.DocumentationExecute.execute(DocumentationExecute.java:73)
+	at cn.smallbun.screw.core.produce.AbstractDocumentationExecute.execute(AbstractDocumentationExecute.java:39)
+	at cn.smallbun.screw.core.produce.PostgreSQLDocumentationBuilderTest.build(PostgreSQLDocumentationBuilderTest.java:74)
+Caused by: java.lang.NullPointerException
+	at java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+	at java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+	at cn.smallbun.screw.core.process.DataModelProcess.process(DataModelProcess.java:119)
+	at cn.smallbun.screw.core.process.DataModelProcess.process(DataModelProcess.java:68)
+	at cn.smallbun.screw.core.execute.DocumentationExecute.execute(DocumentationExecute.java:66)
+	... 69 more
+```
+
+修改到 **postgres** 分支
+
+
 
 <p align="center">
   <a href="https://github.com/pingfangushi/screw">

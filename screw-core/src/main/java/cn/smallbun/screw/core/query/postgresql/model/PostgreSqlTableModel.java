@@ -32,51 +32,51 @@ public class PostgreSqlTableModel implements Table {
     /**
      * refGeneration
      */
-    @MappingField(value = "REF_GENERATION")
+    @MappingField(value = "ref_generation")
     private String refGeneration;
     /**
      * typeName
      */
-    @MappingField(value = "TYPE_NAME")
+    @MappingField(value = "type_name")
     private String typeName;
     /**
      * typeSchem
      */
-    @MappingField(value = "TYPE_SCHEM")
+    @MappingField(value = "type_schem")
     private String typeSchem;
     /**
      * tableSchem
      */
-    @MappingField(value = "TABLE_SCHEM")
+    @MappingField(value = "table_schem")
     private String tableSchem;
     /**
      * typeCat
      */
-    @MappingField(value = "TYPE_CAT")
+    @MappingField(value = "type_cat")
     private String typeCat;
     /**
      * tableCat
      */
-    @MappingField(value = "TABLE_CAT")
+    @MappingField(value = "table_cat")
     private Object tableCat;
     /**
      * 表名称
      */
-    @MappingField(value = "TABLE_NAME")
+    @MappingField(value = "table_name")
     private String tableName;
     /**
      * selfReferencingColName
      */
-    @MappingField(value = "SELF_REFERENCING_COL_NAME")
+    @MappingField(value = "self_referencing_col_name")
     private String selfReferencingColName;
     /**
      * 说明
      */
-    @MappingField(value = "REMARKS")
+    @MappingField(value = "remarks")
     private String remarks;
     /**
      * 表类型
      */
-    @MappingField(value = "TABLE_TYPE")
+    @MappingField(value = "table_type")
     private String tableType;
 }
