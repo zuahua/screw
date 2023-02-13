@@ -1,5 +1,7 @@
 # fork change
 
+## fixed
+
 1. postgresql NPE
 
 ```shell
@@ -19,6 +21,15 @@ Caused by: java.lang.NullPointerException
 ```
 
 修改到 **postgres** 分支
+
+
+## test example
+
+`cn.smallbun.screw.core.produce.PostgreSQLDocumentationBuilderTest`
+
+`src/main/resources/properties/postgresql.properties`
+
+----
 
 
 
